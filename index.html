@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Marker</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container pt-2">
+    <h1 class="pb-3 text-muted">Book Marker </h1>
+    <hr>
+</div>
+<main>
+<section class="lyer-color">
+    <div class="form-project text-center my-5 py-4 ">
+        <h2>Bookmark Your favorite sites </h2>
+    </div>
+
+    <div class="form-group mx-5">
+        <label class="text-center font-weight-bold ">Site Name</label>
+        <input id="name" type="text" class="form-control" placeholder="Book Name">
+    </div>
+
+    
+    <div class="form-group mx-5">
+        <label class="text-center font-weight-bold ">Site url</label>
+        <input id="url" type="text" class="form-control" placeholder="Website URL">
+
+        <button id="addbtn" disabled class="btn btn-primary text-center" >Submit</button>
+
+    </div>
+
+</section>
+
+<input  onkeyup="search(this.value)" class="my-3 form-control" placeholder="Search by bookmark name">
+
+<section>
+    <div class="output">
+        <table class="table">
+            <thead>
+             <tr>
+                <th>name </th>
+                <th>name </th>
+                <th>name </th>
+                <th>name </th>
+
+
+             </tr>
+            </thead>
+            <tbody id="table-body">
+
+            </tbody>
+        </table>
+    </div>
+
+    <hr>
+   
+</section>
+
+<footer>
+    <h6 class="text-muted">@2019 Bookmarker inc.</h6>
+</footer>
+</main>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
